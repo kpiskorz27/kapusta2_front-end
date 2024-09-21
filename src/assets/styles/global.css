@@ -1,0 +1,35 @@
+body {
+  background-color: #ffffff;
+  color: #000;
+  margin: auto;
+  padding: 0;
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+/* Responsive Layout */
+@media screen and (min-width: 320px) {
+  body {
+    width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  body {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  body {
+    width: 1280px;
+  }
+}
+
+@import "report-page.css"; /* Report page-specific styles */

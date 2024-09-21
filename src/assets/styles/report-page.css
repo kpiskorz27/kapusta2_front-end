@@ -1,0 +1,208 @@
+/* Back to Home Button */
+.back-to-home {
+  background-color: transparent;
+  border: none;
+  color: #f76c39; /* Back arrow color */
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.back-to-home .arrow-left {
+  margin-right: 5px;
+}
+
+/* Current Period Section */
+.current-period {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+  color: #52555f;
+}
+
+.current-period .month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-period .arrow {
+  color: #f76c39;
+  font-size: 1.5rem;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.current-period .month-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.current-period .balance {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #52555f;
+  font-weight: bold;
+}
+
+/* Expenses and Income Sections */
+.report-sections {
+  background-color: #fff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.expenses-section h2 {
+  color: #e74c3c;
+  font-size: 1.2rem;
+}
+
+.income-section h2 {
+  color: #27ae60;
+  font-size: 1.2rem;
+}
+
+.negative {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.positive {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Category Section */
+.category-section {
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.category-item {
+  text-align: center;
+  padding: 10px;
+}
+
+.category-item span {
+  display: block;
+  font-size: 12px;
+  color: #52555f;
+  margin-top: 5px;
+}
+
+/* Graph Section (Horizontal Bars) */
+.report-graph {
+  margin-top: 20px;
+}
+
+.bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.bar-label {
+  font-size: 0.9rem;
+  color: #52555f;
+  width: 30%;
+}
+
+.bar {
+  width: 60%;
+  height: 10px;
+  background-color: #f76c39;
+  border-radius: 10px;
+}
+
+.bar-value {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #52555f;
+  width: 10%;
+  text-align: right;
+}
+
+.category-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Add some space between rows */
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Space the items evenly */
+  flex-wrap: wrap; /* Make sure it wraps correctly for the last row */
+  border-bottom: 1px solid #e0e5eb;
+}
+
+.category-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  width: calc(33.33% - 20px); /* Make sure the items are 3 per row */
+  margin-bottom: 20px;
+}
+
+.icon-background {
+  position: absolute;
+  width: 59px;
+  height: 46px;
+  background-color: #f5f6fb;
+  border-radius: 20px;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon {
+  position: relative;
+  z-index: 1;
+}
+
+.category-expense {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.category-name {
+  font-size: 12px;
+  color: #52555f;
+  margin-top: 10px;
+}
+.icon-wrapper {
+  height: 65px;
+  width: 57px;
+}
+/* Hover effect */
+.icon-wrapper:hover .icon-background {
+  background-color: #ffdac0;
+}
+
+.icon-wrapper:hover .icon {
+  fill: #ff751d;
+}
+/* Special rule for last row (with 2 items) */
+.row:last-child {
+  justify-content: center; /* Center the two items */
+}
+
+.row:last-child .category-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Tablet (768px and up) */
+
+/*Desktop (1280px and up)*/

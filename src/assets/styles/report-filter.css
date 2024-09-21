@@ -1,0 +1,26 @@
+/* Report Filter for Mobile */
+.report-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.arrow-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.current-period {
+  font-size: 16px;
+  margin: 0 15px;
+}
+
+/* Tablet and larger */
+@media (min-width: 768px) {
+  .current-period {
+    font-size: 18px;
+  }
+}
