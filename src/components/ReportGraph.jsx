@@ -1,12 +1,19 @@
 import React from "react";
+import { Bar } from "react-chartjs-2";
 
-const ReportGraph = () => {
-  return (
-    <div>
-      <h2>Graph Placeholder</h2>
-      {/* Add graph implementation later */}
-    </div>
-  );
+const ReportGraph = ({ data }) => {
+  const chartData = {
+    labels: data.labels,
+    datasets: [
+      {
+        label: "UAH",
+        data: data.values,
+        backgroundColor: ["#FF6384", "#36A2EB"],
+      },
+    ],
+  };
+
+  return <Bar data={chartData} />;
 };
 
 export default ReportGraph;

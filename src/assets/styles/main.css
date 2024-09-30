@@ -1,2 +1,8 @@
 @import "global.css";
 @import "report-page.css";
+@import "back-to-home.css";
+@import "current-period";
+@import "balance";
+@import "budget-summary.css";
+@import "report-category-switcher";
+@import "expenses-income";

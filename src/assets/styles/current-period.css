@@ -1,0 +1,44 @@
+.text-current-period {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #52555fb2;
+  font-size: 12px;
+  padding-bottom: 5px;
+}
+.current-period {
+  grid-row: 2;
+  padding-bottom: 32px;
+}
+
+.current-period .month {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-period .arrow {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.current-period .month-name {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.current-period .balance {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #52555f;
+  font-weight: bold;
+}
+
+/* Tablet (768px and up) */
+@media screen and (min-width: 768px) {
+  .current-period {
+    padding-bottom: 0px;
+    width: 192px;
+  }
+}

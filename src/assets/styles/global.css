@@ -31,5 +31,3 @@ p {
     width: 1280px;
   }
 }
-
-@import "report-page.css"; /* Report page-specific styles */

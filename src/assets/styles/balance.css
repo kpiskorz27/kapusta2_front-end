@@ -1,0 +1,37 @@
+.balance-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 10px;
+  align-items: center;
+  width: 124px;
+  justify-content: center;
+}
+
+.balance-text {
+  color: #52555fb2;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.balance-sum {
+  padding: 15px 29px;
+  border: 2px solid red;
+  border-radius: 22px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Tablet (768px and up) */
+@media screen and (min-width: 768px) {
+  .balance-container {
+    display: inline-flex;
+    flex-direction: row;
+    margin: 0 20px;
+    gap: 15px;
+    width: 228px;
+  }
+  .balance-sum {
+    padding: 12px 20px 12px 20px;
+  }
+}

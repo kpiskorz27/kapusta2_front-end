@@ -1,0 +1,10 @@
+.category-switcher {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.view-name {
+  padding-left: 20px;
+  padding-right: 20px;
+}

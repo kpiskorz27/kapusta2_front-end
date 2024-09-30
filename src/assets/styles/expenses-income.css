@@ -1,0 +1,137 @@
+.category-item span {
+  font-size: 12px;
+  color: #52555f;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.category-name {
+  text-transform: uppercase;
+}
+.no-expenses-income {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+}
+.category-income {
+  width: 95px;
+}
+.view-name {
+  font-size: 14px;
+  font-weight: 700;
+}
+.items-section-income,
+.items-section-expenses {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between; /* Space the items evenly */
+  flex-wrap: wrap; /* Make sure it wraps correctly for the last row */
+  border-bottom: 1px solid #e0e5eb;
+}
+
+.category-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+  width: calc(33.33% - 20px); /* Make sure the items are 3 per row */
+  margin: 10px 0 10px 0;
+}
+
+.icon-background {
+  position: absolute;
+  width: 59px;
+  height: 46px;
+  background-color: #f5f6fb;
+  border-radius: 20px;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.category-name {
+  font-size: 12px;
+  color: #52555f;
+  margin-top: 10px;
+}
+.icon-wrapper {
+  height: 65px;
+  width: 57px;
+  position: relative; /* Ensure relative positioning for proper layout */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Hover effect */
+.icon-wrapper:hover .icon-background {
+  background-color: #ffdac0;
+}
+
+.icon-active {
+  fill: #ff751d;
+}
+
+/* Special rule for last row (with 2 items) */
+.row:last-child {
+  justify-content: center; /* Center the two items */
+}
+
+.row:last-child .category-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* Tablet (768px and up) */
+@media screen and (min-width: 768px) {
+  .category-section {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    width: auto;
+    margin: 0 20px 0 20px;
+    padding: 20px 40px 20px 40px;
+  }
+
+  .items-section-income,
+  .items-section-expenses {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+  }
+  .items-section-expenses {
+    width: 623px;
+    row-gap: 40px;
+  }
+  .items-section-income {
+    width: 190px;
+    gap: 65px;
+  }
+  .row {
+    display: contents;
+  }
+  .category-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    text-align: center;
+    width: calc(16.66% - 14px);
+    margin: 0;
+  }
+  .row:last-child .category-item {
+    margin: 0;
+  }
+}
+
+/*Desktop (1280px and up)*/
+
+@media screen and (min-width: 1280px) {
+}
